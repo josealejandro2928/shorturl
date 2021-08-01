@@ -4,6 +4,7 @@ const Url = require("./url.model");
 
 const connectDb = (databaseUrl = "") => {
   const url = databaseUrl || process.env.DATABASE_URL;
+  console.log("🚀 ~ file: index.js ~ line 7 ~ connectDb ~ url", url);
   // console.log('DATABASE URL: ', url);
   return mongoose.connect(url, {
     useNewUrlParser: true,
